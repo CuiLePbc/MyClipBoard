@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyClipBoard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="main_left_menu_items">
+        <item>剪切板内容</item>
+        <item>菜单项二</item>
+        <item>菜单项三</item>
+        <item>菜单项四</item>
+    </array>
+</resources>
