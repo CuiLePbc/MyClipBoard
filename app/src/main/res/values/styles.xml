@@ -12,5 +12,9 @@
         <!--解决toolbar左边留空白-->
         <item name="contentInsetStart">0dp</item>
     </style>
+    
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
 
 </resources>

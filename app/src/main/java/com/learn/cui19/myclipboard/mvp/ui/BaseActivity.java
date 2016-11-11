@@ -1,9 +1,10 @@
-package com.learn.cui19.myclipboard;
+package com.learn.cui19.myclipboard.mvp.ui;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -13,17 +14,13 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
+import com.learn.cui19.myclipboard.R;
+import com.learn.cui19.myclipboard.ScreenUtil;
+
 public class BaseActivity extends AppCompatActivity {
     private static final String TAG = "BaseActivity";
 
     private LinearLayout mRootLayout;
-
-//    TextView mToolbarCenterTV;
-//
-//    TextView mToolbarLeftTV;
-//
-//    TextView mToolbarRightTV;
-
     protected Toolbar mToolbar;
 
     public Toolbar getToolbar() {
@@ -34,6 +31,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_base);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         if (!isTaskRoot()) {
             /* If it is not the root Activity, finish it! */
@@ -136,15 +134,4 @@ public class BaseActivity extends AppCompatActivity {
         win.setAttributes(winParams);
     }
 
-    /**
-     * 设置标题栏文字
-     * @param leftTitleText
-     * @param centerTitleText
-     * @param rightTitleText
-     */
-//    public void setTitleText(String leftTitleText, String centerTitleText, String rightTitleText){
-//        mToolbarCenterTV.setText(centerTitleText);
-//        mToolbarLeftTV.setText(leftTitleText);
-//        mToolbarRightTV.setText(rightTitleText);
-//    }
 }

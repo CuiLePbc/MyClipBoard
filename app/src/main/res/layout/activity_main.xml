@@ -5,16 +5,13 @@
     android:id="@+id/main_drawerlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.learn.cui19.myclipboard.MainActivity">
-
-
+    tools:context="com.learn.cui19.myclipboard.mvp.ui.MainActivity">
         <FrameLayout
             android:id="@+id/main_content_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
         </FrameLayout>
-
         <FrameLayout
             android:id="@+id/main_leftmenu_container"
             android:layout_width="match_parent"
@@ -22,5 +19,4 @@
             android:layout_gravity="left"
             android:tag="LEFT_MENU"
             android:background="#ffffffff"></FrameLayout>
-
 </android.support.v4.widget.DrawerLayout>

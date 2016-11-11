@@ -5,14 +5,14 @@
         <item
             android:id="@+id/main_toolbar_menu_refresh"
             android:title="刷新"
-            android:icon="@android:drawable/ic_menu_rotate"
+            android:icon="@drawable/ic_refresh_white_24dp"
             app:showAsAction="always"/>
 
         <item
             android:id="@+id/main_toolbar_menu_writein"
             android:title="写入"
             app:showAsAction="always"
-            android:icon="@android:drawable/ic_menu_edit"/>
+            android:icon="@drawable/ic_save_white_24dp"/>
     </group>
     <group>
         <item

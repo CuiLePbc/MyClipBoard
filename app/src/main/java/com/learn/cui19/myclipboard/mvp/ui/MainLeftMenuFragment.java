@@ -1,4 +1,4 @@
-package com.learn.cui19.myclipboard;
+package com.learn.cui19.myclipboard.mvp.ui;
 
 
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.learn.cui19.myclipboard.R;
 
 /**
  * A simple {@link Fragment} subclass.

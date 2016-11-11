@@ -3,6 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">\"Open The Menu\"</string>
+    <string name="drawer_close">CloseTheMenu</string>
 
     <array name="main_left_menu_items">
         <item>剪切板内容</item>

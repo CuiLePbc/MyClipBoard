@@ -1,6 +1,8 @@
 package com.learn.cui19.myclipboard;
 
 import android.content.Context;
+import android.support.design.widget.Snackbar;
+import android.view.View;
 
 /**
  * Created by cui19 on 2016/10/19.
@@ -24,5 +26,14 @@ public class ScreenUtil {
             e.printStackTrace();
         }
         return statusHeight;
+    }
+
+    /**
+     * 悬浮窗提示信息
+     *
+     * @param content
+     */
+    public static void snack(String content, View view) {
+        Snackbar.make(view, content, Snackbar.LENGTH_SHORT).show();
     }
 }
